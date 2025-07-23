@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Filtering</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <script type="text/javascript" src="table-filter.js"></script>
+    <div class="Page">
+      <div class="Container">
+        <input
+          type="text"
+          id="table-filter-input"
+          onkeyup="tableFilter()"
+          placeholder="Filter table..."
+        />
+        <button id="table-filter-button" onclick="clearFilterInput()">
+          Clear filter
+        </button>
+        <table class="basic" id="filtered-table">
+          <thead>
+            <tr>
+              <th>Load Start</th>
+              <th>Load Complete</th>
+              <th>Load Type</th>
+              <th>Load Status</th>
+              <th>Connector</th>
+              <th>Data Set</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="Pipeline ID">
+              <td class="pipeline-id-align" colspan="6">
+                Pipeline: Daily Ad Numbers<a href="#top" class="back-to-top"
+                  >top</a
+                >
+              </td>
+            </tr>
+            <!-- <tr class="subhead2"> 
+          <td colspan="3">Sub-subheading<a href="#top" class="back-to-top">top</a></td> 
+        </tr>  -->
+            <tr>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>update</td>
+              <td>complete</td>
+              <td>Google Ads</td>
+              <td>Ads</td>
+            </tr>
+            <tr>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>in progress</td>
+              <td>update</td>
+              <td>loading</td>
+              <td>Google Ads</td>
+              <td>Age Demographics</td>
+            </tr>
+            <tr>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>initial</td>
+              <td>complete</td>
+              <td>Google Ads</td>
+              <td>Audiences</td>
+            </tr>
+            <tr>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>update</td>
+              <td>complete</td>
+              <td>Google Ads</td>
+              <td>Campaigns</td>
+            </tr>
+            <tr>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>initial</td>
+              <td>scheduled</td>
+              <td>Google Ads</td>
+              <td>Age Demographics</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
