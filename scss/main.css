@@ -4776,7 +4776,7 @@ strong {
   margin: 18px;
 }
 
-#table-filter-button {
+/* #table-filter-button {
   border-radius: 3px;
   font-size: 1em;
   color: #00abf0;
@@ -4789,7 +4789,7 @@ strong {
   cursor: pointer;
   color: white;
   background-color: #00abf0;
-}
+} */
 
 Table {
   /* removes space between columns creating continuous row*/

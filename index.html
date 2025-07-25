@@ -14,16 +14,21 @@
     <script type="text/javascript" src="table-filter.js"></script>
     <div class="Page">
       <div class="Container">
+        <div>
         <input
           type="text"
           id="table-filter-input"
           onkeyup="tableFilter()"
-          placeholder="Filter table..."
+          placeholder="Search load history..."
         />
-        <button id="table-filter-button" onclick="clearFilterInput()">
-          Clear filter
+        <button
+          id="table-filter-button"
+          class="Button button"
+          onclick="clearFilterInput()"
+        >
+          Clear search
         </button>
-        <table class="basic" id="filtered-table">
+        <table class="" id="filtered-table">
           <thead>
             <tr class="header">
               <th>Pipeline</th>
@@ -38,8 +43,8 @@
           <tbody>
             <tr>
               <td>Daily Ad Numbers</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
               <td>update</td>
               <td>complete</td>
               <td>Google Ads</td>
@@ -47,7 +52,7 @@
             </tr>
             <tr>
               <td>Daily Ad Numbers</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
               <td>in progress</td>
               <td>update</td>
               <td>loading</td>
@@ -56,8 +61,8 @@
             </tr>
             <tr>
               <td>Daily Ad Numbers</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
               <td>initial</td>
               <td>complete</td>
               <td>Google Ads</td>
@@ -65,8 +70,8 @@
             </tr>
             <tr>
               <td>Daily Ad Numbers</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
               <td>update</td>
               <td>complete</td>
               <td>Google Ads</td>
@@ -74,12 +79,39 @@
             </tr>
             <tr>
               <td>Daily Ad Numbers</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
-              <td>Fri, 18 Oct 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
+              <td>Fri, 18  July 2024 15:06:27</td>
               <td>initial</td>
               <td>scheduled</td>
               <td>Google Ads</td>
               <td>Extensions</td>
+            </tr>
+            <tr>
+              <td>Daily Ad Numbers</td>
+              <td>Thurs, 17  July 2024 15:06:27</td>
+              <td>Thurs, 17  July 2024 15:06:27</td>
+              <td>standard</td>
+              <td>complete</td>
+              <td>Google Analytics</td>
+              <td>clicks</td>
+            </tr>
+            <tr>
+              <td>Daily Ad Numbers</td>
+              <td>Thurs, 17  July 2024 15:06:27</td>
+              <td>Thurs, 17  July 2024 15:06:27</td>
+              <td>standard</td>
+              <td>complete</td>
+              <td>Google Analytics</td>
+              <td>returns</td>
+            </tr>
+            <tr>
+              <td>Daily Ad Numbers</td>
+              <td>Thurs, 17  July 2024 15:06:27</td>
+              <td>Thurs, 17  July 2024 15:06:27</td>
+              <td>standard</td>
+              <td>complete</td>
+              <td>Google Analytics</td>
+              <td>lost</td>
             </tr>
           </tbody>
         </table>

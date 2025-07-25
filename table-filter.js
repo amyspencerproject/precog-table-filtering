@@ -9,7 +9,7 @@ function tableFilter() {
   // Loop through all table rows, then through all row cells,
   // and hide the rows where none of the cells match the filter
   //
-  // has "header" designation
+  // has "header" designation, a class on th elements
   for (i = 0; i < tr.length; i++) {
     if (!tr[i].classList.contains("header")) {
       tr[i].style.display = "none";
@@ -25,7 +25,7 @@ function tableFilter() {
     }
   }
 
-  // without "header" designation
+  // without "header" designation, works fine
 
   // for (i = 0; i < tr.length; i++) {
   //   tr[i].style.display = "none";
@@ -44,5 +44,5 @@ function tableFilter() {
 function clearFilterInput() {
   let input = document.getElementById("table-filter-input");
   input.value = "";
-  tableFilter(); // force the table to reset since there is no keyup action here
+  tableFilter(); // force the table to reset
 }
